@@ -1,5 +1,6 @@
 * {
   font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -36,7 +37,7 @@ ul {
 
 p {
   color: #69696a;
-  border-left: 2px solid #69696a;
+  border-left: 4px solid #69696a;
   padding-left: 10px;
   width: 95%;
   margin-right: 15px;
@@ -49,6 +50,20 @@ button {
   padding: 10px 0px;
   width: 95%;
   margin-right: 15px;
+  animation-duration: 5000ms;
+}
+
+button:hover {
+  animation-name: background-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+  100% {
+    background-color: rgba(247, 193, 162, 0.7);
+    color: #000;
+  }
 }
 
 a:link {
