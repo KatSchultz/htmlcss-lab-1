@@ -24,7 +24,6 @@ header {
 
 main {
   padding-left: 15px;
-  padding-bottom: 200px;
 }
 
 ul {
@@ -47,7 +46,7 @@ button {
   color: #fff;
   border-radius: 50px;
   border: none;
-  padding: 10px;
+  padding: 10px 0px;
   width: 95%;
   margin-right: 15px;
 }
@@ -77,4 +76,57 @@ footer {
 
 footer h3 {
   padding-left: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  #navbar {
+    display: flex;
+    flex-direction: row;
+  }
+  #nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #nav-list li {
+    padding: 0px 15px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  #hire-us {
+    padding: 10px;
+  }
+  main {
+    width: 50%;
+  }
+  .med-circle {
+    background-color: rgba(247, 193, 162, 0.7);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: fixed;
+    top: 280px;
+    right: 20px;
+  }
+  .big-circle {
+    background-color: rgba(247, 136, 167, 0.6);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: fixed;
+    right: 75px;
+    top: 150px;
+  }
+
+  .small-circle {
+    background-color: rgba(207, 130, 213, 0.6);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    top: 220px;
+  }
 }
